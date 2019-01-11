@@ -1,0 +1,25 @@
+<html>
+<link rel="shortcut icon" href="favicon.ico" sizes="256x256" />
+<style>
+</style>
+<title>Systeminfo App</title>
+
+<body>
+  <div class="content">
+    <div class="heading">Carlo demo0!</div>
+    <div id="info"></div>
+  </div>
+  <script>
+    const info = document.getElementById('info')
+
+    const starter = async () => {
+      console.log(`starter()`)
+      test()  // wil log test in the terminal
+      info.innerHTML = await getOs()
+    }
+
+    starter().then(() => {})
+  </script>
+</body>
+
+</html>
