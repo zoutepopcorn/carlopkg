@@ -1,16 +1,15 @@
 {
-  "name": "carlopkg",
-  "version": "0.9.0",
-  "description": "System info example",
-  "main": "main.js",
+  "name": "carlo-pkg-es",
+  "version": "0.0.1",
+  "description": "es6 pkg carlo",
+  "main": "app.js",
   "scripts": {
-    "bundle": "pkg package.json",
-    "start": "node main.js",
-    "build": "pkg . --out-path execute",
-    "test": "node test.js"
+    "build": "rm -rf execute && pkg . --out-path execute",
+    "parcel": "parcel build app.js --target electron --out-file es6.js --out-dir .",
+    "start": "npm run parcel && node es6.js"
   },
   "bin": {
-    "systeminfo-app": "./main.js"
+    "carlo-pkg-es": "./app.js"
   },
   "pkg": {
     "scripts": "*.js",
