@@ -2,15 +2,23 @@
 Simple example based on this example:
 https://github.com/GoogleChromeLabs/carlo/blob/master/examples/systeminfo/app.js
 
+You can use es6 with this example
+
 ### Usage
 
 Install dependencies
+
+You will need parcel
+```
+npm i parcel -g
+```
+
 
 ```bash
 npm i
 ```
 
-Run application
+Run application / start will also build it with parcel
 
 ```bash
 npm start
