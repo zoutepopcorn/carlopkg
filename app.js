@@ -1,13 +1,12 @@
-/* https://github.com/GoogleChromeLabs/carlo/blob/master/examples/systeminfo/app.js
- * Copyright 2018 Google Inc., PhantomJS Authors All rights reserved.
- * Licensed under the Apache License, Version 2.0
- */
+import Example from './class/example'
 const carlo = require('carlo');
 const path = require('path');
 const os = require('os');
 const osName = require('os-name');
 
 async function run() {
+    const example = new Example()
+    console.log(example)
     let app;
     try {
         app = await carlo.launch(
