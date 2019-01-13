@@ -1,7 +1,16 @@
-node_modules
+# files
 package-lock.json
+es6.js
+es6.map
+
+
+# folders
+node_modules
+execute
+
+# .dots
 .profile
 .DS_Store
 .vscode
 .idea
-execute
+.cache
